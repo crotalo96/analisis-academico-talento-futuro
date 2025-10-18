@@ -124,7 +124,7 @@ GROUP BY d.estrato, d.genero;
 ## 🐍 Análisis Python (Pandas)
 
 ```python
-# EDA Básico
+# EDA 
 print("=== Distribución de Estados Académicos ===")
 print(df['estado_academico'].value_counts(normalize=True))
 
@@ -139,18 +139,19 @@ segment_analysis = df.groupby(['id_programa', 'estrato']).agg({
 }).round(2)
 ```
 
-## 📊 Dashboard Power BI
+## 📊 Dashboard Power BI DAX
 
 **Métricas Principales:**
-- Tasa de retención por programa/sede
-- Desempeño académico vs variables demográficas
-- Efectividad de instructores
-- Alertas tempranas de estudiantes en riesgo
+- Programas con mayor riesgo de deserción
+- Distribución de promedio académico por programa
+- Promedio académico por instructor
+- Asistencia promedio por sede
+- Rentabilidad de programas
+- Estado académico general
 
 **Filtros Interactivos:**
 - Por programa académico
 - Por sede
-- Por rango de fecha
 - Por estrato socioeconómico
 
 ## 🚀 Implementación Recomendada
@@ -179,20 +180,4 @@ segment_analysis = df.groupby(['id_programa', 'estrato']).agg({
 | Asistencia estratos 1-2 | 78% | 85% |
 | Satisfacción instructores | - | +15% |
 
-## 👥 Equipo y Roles
 
-- **Científico de Datos**: Análisis EDA y modelado
-- **Analista BI**: Dashboards y reporting
-- **Especialista Behavioral**: Diseño de intervenciones
-- **Líder Académico**: Implementación estratégica
-
-## 📄 Licencia
-
-Este proyecto es para uso interno del Instituto Técnico Laboral "Talento Futuro".
-
----
-
-**¿Preguntas o colaboraciones?** Abre un issue o contacta al equipo de análisis de datos.
-
----
-*Última actualización: ${new Date().toLocaleDateString()}*

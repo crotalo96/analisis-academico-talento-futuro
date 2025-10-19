@@ -15,32 +15,6 @@ Generar insights accionables basados en datos para fortalecer la toma de decisio
 - **Metodología**: Design Thinking centrado en el usuario
 - **Framework**: Behavioral Economics para insights estratégicos
 
-## 📁 Estructura del Proyecto
-
-```
-proyecto-analisis-academico/
-│
-├── data/
-│   ├── raw/                    # Datos brutos
-│   ├── processed/              # Datos procesados
-│   └── outputs/                # Resultados y exports
-│
-├── notebooks/
-│   ├── 01_eda_academico.ipynb  # Análisis exploratorio
-│   ├── 02_etl_transform.ipynb  # Transformación de datos
-│   └── 03_behavioral_insights.ipynb # Insights conductuales
-│
-├── sql/
-│   ├── queries_analiticas.sql  # Consultas SQL principales
-│   └── vistas_estratégicas.sql # Vistas para reporting
-│
-├── powerbi/
-│   └── dashboard_academico.pbix # Dashboard interactivo
-│
-└── docs/
-    └── insights_estrategicos.md # Recomendaciones accionables
-```
-
 ## 🔍 Metodología
 
 ### Design Thinking Centrado en el Estudiante
